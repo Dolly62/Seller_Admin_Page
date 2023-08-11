@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import classes from "./Input.module.css";
+import Button from "../UI/Button";
+import Card from "../UI/Card";
 
 const Input = (props) => {
   const [enteredProductID, setEnteredProducID] = useState("");
@@ -25,9 +28,9 @@ const Input = (props) => {
   };
 
   return (
-    <React.Fragment>
+    <Card className={classes.input}>
       <h1>Seller Form</h1>
-      <form onSubmit={addSellerHandler}>
+      <form onSubmit={addSellerHandler} >
         <label htmlFor="productid">Product ID:</label>
         <input
           type="number"
@@ -49,9 +52,9 @@ const Input = (props) => {
           value={enteredProductName}
           onChange={productNameHandler}
         />
-        <button type="submit">Add Product</button>
+        <Button type="submit">Add Product</Button>
       </form>
-    </React.Fragment>
+    </Card>
   );
 };
 

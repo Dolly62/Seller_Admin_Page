@@ -1,0 +1,11 @@
+.total {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40rem;
+    font-weight: bold;
+    background: rgb(229, 246, 80);
+  }
+  .total span{
+    font-weight: bolder;
+  }
